@@ -1,5 +1,6 @@
-apply plugin: 'com.android.library'
+//has to be BEFORE 'com.android.library' to work with gradle version 4.6 which is required by android studio 3.2
 apply plugin: 'com.novoda.bintray-release'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 27
