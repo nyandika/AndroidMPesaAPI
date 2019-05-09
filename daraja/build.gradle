@@ -2,11 +2,11 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 27
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
 
@@ -23,12 +23,13 @@ android {
 }
 
 publish {
+    userOrg = 'androidstudy'
     groupId = 'com.androidstudy'
     artifactId = 'daraja'
     publishVersion = '1.0.2'
-    desc = 'Android MPESA SDK Library - Dubbed Daraja'
+    desc = 'Android MPESA SDK Library - Dubbed Daraja_Depr'
     licences = ['Apache-2.0']
-    repoName ='android-daraja-sdk'
+    repoName = 'android-daraja-sdk'
     website = 'https://github.com/jumaallan/AndroidMPesaAPI'
 }
 
@@ -44,7 +45,7 @@ dependencies {
     implementation deps.okhttp3.core
     implementation deps.okhttp3.interceptor
 
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13-beta-2'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 

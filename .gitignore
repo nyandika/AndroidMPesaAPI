@@ -1,7 +1,8 @@
-*.iml
+  *.iml
 .gradle
 /local.properties
 /.idea/libraries
+/.idea/*
 /.idea/modules.xml
 /.idea/workspace.xml
 .DS_Store
@@ -11,3 +12,5 @@
 publishingInfo.txt
 
 
+app/app.iml
+daraja/daraja.iml

@@ -1,7 +1,6 @@
 package com.androidstudy.daraja.okhttp;
 
 import android.support.annotation.NonNull;
-import android.util.Log;
 
 import java.io.IOException;
 
@@ -11,7 +10,7 @@ import okhttp3.Response;
 
 public class AuthInterceptor implements Interceptor {
 
-    private String authToken;
+    private final String authToken;
 
     public AuthInterceptor(String authToken) {
         this.authToken = authToken;
